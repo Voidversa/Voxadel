@@ -1,0 +1,929 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B2A25;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
+    width: 1920px;
+    background-color: #2B2A25;
+    position: relative;
+    margin-left: 400px;
+}
+
+/* Центрирование группы с компенсацией смещения */
+.header-group {
+    position: relative;
+    width: 1920px;
+    height: 100px;
+    margin: 0 auto;
+    z-index: 200;
+}
+
+.profile-utils a {
+    color: #2B2A25;
+    text-decoration: none;
+}
+
+.button-wrapper a{
+    text-decoration: none;
+}
+
+/* Декорация */
+.deco-header {
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+}
+
+/* Общие стили для всех оберток кнопок */
+.button-wrapper {
+    position: absolute;
+    top: 0px;
+}
+
+/* Кнопка Support */
+.button-support {
+    left: 434px;
+    z-index: 10;
+}
+
+.buttons-header {
+    display: block;
+}
+
+/* Кнопка Register */
+.button-register {
+    left: 673px;
+    top: 1px;
+    z-index: 9;
+}
+
+.buttons-header-1 {
+    display: block;
+}
+
+/* Кнопка Log in */
+.button-login {
+    left: 896px;
+    z-index: 8;
+}
+
+.buttons-header-2 {
+    display: block;
+}
+
+/* Кнопка корзины */
+.button-cart {
+    left: 991px;
+    z-index: 7;
+}
+
+.buttons-header-3 {
+    display: block;
+}
+
+/* Текст на кнопках */
+.text-header {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    z-index: 100;
+    white-space: nowrap;
+}
+
+/* Иконка корзины */
+.cart-icon {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 45px;
+    height: 45px;
+}
+
+.logo {
+    position: absolute;
+    top: 35px;
+    left: 283px;
+    z-index: 100;
+}
+
+.pfpsmall {
+    position: absolute;
+    top: 104px;
+    left: 25px;
+    z-index: 100;
+}
+
+.profile-utils {
+    position: absolute;
+    top: 110px;
+    left: 86px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: bold;
+    color: #2B2A25;
+    text-decoration: none;
+}
+
+.logout:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 15px #ffffff;
+    transition:0.3s
+}
+
+.profile-open:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 15px #ffffff;
+    transition:0.3s
+}
+
+.button-wrapper:hover {
+    color: #FFE012;
+    text-shadow: 1px 1px 15px #FFE012;
+    transition:0.3s
+}
+
+.sidebar-group {
+    position: absolute;
+    top: 491px;
+    left:0px;
+    z-index: 100;
+}
+
+.sidebutton {
+    position: relative;
+}
+
+.main {
+    position: absolute;
+    top: 0px;
+    z-index: 100;   
+    
+}
+
+.nav {
+    position: absolute;
+    top: 61px;
+    z-index: 100;
+}
+
+.shop {
+    position: absolute;
+    top: 122px;
+    z-index: 100;
+}
+
+.footer {
+    position: absolute;
+    top: 183px;
+    z-index: 100;
+}
+
+.deco {
+    position: absolute;
+    top: 244px;
+    z-index: 100;
+}
+
+.line1 {
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    z-index: 201;
+}
+
+.line2 {
+    position: absolute;
+    top: 115px;
+    left: 0px;
+    z-index: 201;
+}
+
+.line3 {
+    position: absolute;
+    top: 176px;
+    left: 0px;
+    z-index: 201;
+}
+
+.line4 {
+    position: absolute;
+    top: 238px;
+    left: 0px;
+    z-index: 201;
+}
+
+.text-nav {
+    position: absolute;
+    top: 4px;
+    left: 40px;
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    z-index: 100;
+    white-space: nowrap;
+    text-shadow: 2px 2px 1px #00000050;
+    transition:0.3s
+}
+
+.text-nav:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #FFE012;
+    transition:0.3s
+}
+
+.sidebar-tags {
+    position: absolute;
+    top: 808px;
+    left: 11px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tagbutton-text {
+    position: absolute;
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 29px;
+    z-index: 100;
+    white-space: nowrap;
+    left: 35px;
+}
+
+.tagbutton-text:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #FFE012;
+    transition:0.3s
+}
+
+.tagbutton {
+    position: relative;
+}
+
+.tagbutton:hover .tagbutton-text {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #FFE012;
+    transition:0.3s
+}
+
+.searchfield {
+    position: absolute;
+    top: 612px;
+    left: 275px;
+    width: 1165px;
+    height: 143px;
+    background-image: url('../img/searchbarbg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 70px;
+    gap: 10px;
+}
+
+#search {
+    margin-right: 3px;
+}
+
+.itemfield {
+    position: absolute;
+    top: 755px;
+    left: 275px;
+    width: 1165px;
+    min-height: 1748px;
+    background-color: #fff;
+    background-image: url('../img/bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    row-gap: 80px;
+    column-gap: 130px;
+    padding: 20px;
+    padding-left: 142px;
+}
+
+.featured {
+    position: absolute;
+    top: 98px;
+    left: 275px;
+    width: 1165px;
+    height: 515px;
+    z-index: 80;
+    background-image: url('../img/Tower-of-Babel.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    position: absolute;
+    top: 17px;
+    left: 35%;
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 62px;
+    z-index: 100;
+    text-shadow:4px 4px 0px #474747;
+}
+
+
+footer{
+     position:relative;
+     width:1440px;
+     height:306px;
+     background:#2B2A25;
+     overflow:hidden;
+     padding:70px 90px 40px;
+    }
+
+    .top-decoration{
+     position:absolute;
+     top:0;
+     left:0;
+     width:100%;
+     pointer-events:none;
+    }
+
+    .bottom-decoration{
+     position:absolute;
+     bottom:0;
+     left:0;
+     width:100%;
+     pointer-events:none;
+    }
+
+    .footer-container{
+     position:relative;
+     z-index:2;
+     display:flex;
+     justify-content:space-between;
+    }
+
+    .footer-column h3{
+     color:#FFFFFF;
+     font-size:20px;
+     margin-bottom:6px;
+     font-weight:700;
+     font-family: "Chakra Petch", sans-serif;
+    }
+
+    .footer-column a{
+     display:block;
+     color:#A6A697;
+     text-decoration:none;
+     margin-bottom:10px;
+     font-size:11px;
+     font-weight:400;
+     transition:0.3s;
+    }
+
+    .footer-column a:hover{
+     color: #FFFFFF;
+     text-shadow: 1px 1px 5px #ffffff;
+     transition:0.3s
+    }
+
+    .footer-bottom{
+     position:absolute;
+     bottom:18px;
+     left:50%;
+     transform:translateX(-50%);
+     color:#FFFFFF;
+     font-size:18px;
+     font-weight:600;
+     z-index:2;
+    }
+
+    .footer-bottom{
+        position:absolute;   
+        bottom:15px;
+        left:50%;
+        transform:translateX(-50%);
+        color:#2B2A25;
+        font-size:18px;
+        font-weight:600;
+        z-index:2;
+        font-family: "Chakra Petch", sans-serif;
+    }
+
+.footer-wrapper {
+    position: absolute;
+    top: 2503px;
+}
+
+.searchtagbuttons {
+    display: flex;
+    gap: 20px;
+}
+
+.searchtagbutton a {
+    position: absolute;
+    color: #FFE012;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    transform: translate(-160px, 1px);
+}
+
+.search-button {
+    position: absolute;
+    transform: translate(-61px, -5px);
+    color: #FFE012;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 34px;
+    text-decoration: none;
+}
+
+
+.card-wrapper {
+    position: relative;
+    width: 377px;
+    height: 466px;
+}
+
+
+.preview {
+    display: flex;
+    align-items: center;
+    gap: 319px;
+    background-image: url('../img/img/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 377px;
+    height: 466px;
+}
+
+.preview button {
+    transform: translate(-2px, -30px);
+    width: 31px;
+    height: 46px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    width: 297px;
+    height: 66px;
+    padding: 0 20px;
+    background: #2B2A25;
+    border: 2px solid #FFE012;
+    border-radius: 40px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.search-input:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.search-input::placeholder {
+    color: #A6A697;
+    font-size: 24px;
+}
+
+.search-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    background: #FFE012;
+    border: none;
+    border-radius: 40px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2B2A25;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.search-button:hover {
+    background: #ffffff;
+}
+.util {
+    background-image: url('../img/card-stuff.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 377px;
+    height: 143px;
+    top:323px;
+}
+
+h2 {
+    position: absolute;
+    top: 40px;
+    left: 26px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.rating {
+    position: absolute;
+    top: 77px;
+    left: 18px;
+    height: 22px;
+}
+
+.price {
+    position: absolute;
+    top: 34px;
+    right: 93px;
+}
+
+.author {
+    position: absolute;
+    top: 100px;
+    left: 18px;
+}
+
+.fs-16 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+}
+
+.fs-20 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+}
+
+.fc-b {
+    color: #000000;
+}
+
+.fc-y {
+    color: #FFE012;
+}
+.linebottom {
+        display: none;
+    }
+.rating {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 393px) {
+    /* Сброс главного контейнера */
+    .main-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+        position: relative !important;
+    }
+.searchfield {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    background-image: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 0;
+}
+
+.search-input-wrapper {
+    width: 100%;
+    justify-content: center;
+}
+
+.search-input {
+    width: 70%;
+    height: 50px;
+    font-size: 1rem;
+    padding: 0 15px;
+}
+
+.search-input::placeholder {
+    font-size: 1rem;
+}
+
+.search-button {
+    width: 60px;
+    height: 50px;
+    font-size: 1.2rem;
+}
+    /* Хедер */
+    .header-group {
+        width: 100% !important;
+        height: auto !important;
+        left: 0 !important;
+        right: 0 !important;
+        transform: none !important;
+        margin: 0 !important;
+        padding: 1rem !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        background: #1f1e1a !important;
+        position: relative !important;
+    }
+
+    /* Скрываем декоративные картинки */
+    .deco-header,
+    .buttons-header,
+    .buttons-header-1,
+    .buttons-header-2,
+    .buttons-header-3,
+    .top-decoration,
+    .bottom-decoration {
+        display: none !important;
+    }
+
+    /* Кнопки хедера */
+    .button-wrapper {
+        position: static !important;
+        margin: 0 0.25rem !important;
+    }
+    .button-support,
+    .button-register,
+    .button-login,
+    .button-cart {
+        left: auto !important;
+        top: auto !important;
+    }
+    .nav-icons {
+        display: flex;
+    }
+    .text-header {
+        position: static !important;
+        transform: none !important;
+        font-size: 1rem !important;
+        background: #3a3a33 !important;
+        padding: 0.4rem 0.8rem !important;
+        border-radius: 30px !important;
+        display: inline-block !important;
+    }
+    .cart-icon {
+        width: 28px !important;
+        height: 28px !important;
+        margin-left: 0.25rem !important;
+        top: 86%;
+        left: 86%;
+    }
+    .logo {
+        position: static !important;
+        width: 100px !important;
+        height: auto !important;
+        margin: 0.5rem 0 !important;
+    }
+    .pfpsmall {
+        position: static !important;
+        width: 40px !important;
+        height: 40px !important;
+        margin-right: 0.5rem !important;
+    }
+    .profile-utils {
+        position: static !important;
+        flex-direction: row !important;
+        gap: 1rem !important;
+        align-items: center !important;
+        font-size: 0.9rem !important;
+        background: #2e2d27 !important;
+        padding: 0.5rem 1rem !important;
+        border-radius: 40px !important;
+        margin: 0.5rem 0 !important;
+        width: 100% !important;
+        justify-content: space-between !important;
+    }
+    .profile-utils p {
+        color: #FFFFFF !important;
+        margin: 0 !important;
+        font-size: 1rem !important;
+    }
+    .profile-utils img {
+        width: 16px !important;
+    }
+
+    /* Скрываем сайдбар и теги */
+    .sidebar-group,
+    .sidebar-tags {
+        display: none !important;
+    }
+
+    /* Featured (Tower of Babel) */
+    .featured {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 90% !important;
+        margin: 1rem auto !important;
+        height: auto !important;
+        aspect-ratio: 1165 / 515 !important;
+        background-size: cover !important;
+        background-position: center !important;
+        border-radius: 20px !important;
+    }
+    .featured h1 {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        font-size: 1.8rem !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+    }
+
+    /* Поиск */
+    .searchfield {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        background-image: none !important;
+        background-color: transparent !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 1rem !important;
+        gap: 1rem !important;
+        margin: 0 !important;
+    }
+    .searchfield > div:first-child {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 0.5rem !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+    }
+    #search {
+        width: 200px !important;
+        height: auto !important;
+    }
+    .search-button {
+        position: static !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: #000000 !important;
+        color: #FFE012 !important;
+        font-size: 1.2rem !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+        width: 60px !important;
+        height: 46px !important;
+        border-radius: 8px !important;
+        transform: none !important;
+        font-family: "Chakra Petch", sans-serif !important;
+    }
+    .searchtagbuttons {
+        
+        align-items: center !important;
+        gap: 0.8rem !important;
+        width: 100% !important;
+    }
+    .searchtagbutton img {
+        display: none !important;
+    }
+    .searchtagbutton {
+        position: relative !important;
+        display: inline-block !important;
+        width: auto !important;
+    }
+    .searchtagbutton a {
+        position: static !important;
+        transform: none !important;
+        font-size: 1rem !important;
+        display: inline-block !important;
+        background: #3a3a33 !important;
+        padding: 0.3rem 1rem !important;
+        border-radius: 30px !important;
+        text-align: center !important;
+        color: #FFE012 !important;
+    }
+
+     /* товары (карточки) */
+    .itemfield {
+        position: static;
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        min-height: auto;
+    }
+    .fs-16 {
+        left: 227px;
+    }
+    .itemfield .card-wrapper {
+        width: 90%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .itemfield .preview {
+        width: 100%;
+        background-size: cover;
+    }
+    .itemfield .util {
+        width: 100%;
+        background-size: cover;
+    }
+    .button-l, .button-r {
+        display: none; /* скрываем стрелки навигации на мобилке */
+    }
+
+    /* Футер */
+    .footer-wrapper {
+        position: static !important;
+        margin-top: 2rem !important;
+        width: 100% !important;
+    }
+    footer {
+        width: 100% !important;
+        height: auto !important;
+        padding: 2rem 1rem !important;
+        position: relative !important;
+    }
+    .footer-container {
+        flex-direction: column !important;
+        gap: 1.8rem !important;
+    }
+    .footer-column h3 {
+        font-size: 1.2rem !important;
+        color: #FFE012 !important;
+    }
+    .footer-column a {
+        font-size: 0.8rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .footer-bottom {
+        position: static !important;
+        transform: none !important;
+        text-align: left !important;
+        margin-top: 1.5rem !important;
+        font-size: 0.7rem !important;
+        color: #FFFFFF !important;
+    }
+
+    /* Общие сбросы */
+    body {
+        font-size: 14px;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    a, button {
+        cursor: pointer;
+        touch-action: manipulation;
+    }
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    * {
+        max-width: 100vw;
+    }
+    .linebottom {
+        display: block;
+    }
+}
