@@ -1,0 +1,183 @@
+/*общие стили*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Chakra Petch", sans-serif;
+}
+
+/*фон*/
+body{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#000000;
+}
+
+/*карточка*/
+.card{
+    width:598px;
+    height:363px;
+    position:relative;
+}
+
+/*фон карточки*/
+.background{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
+
+/*полностью скрины*/
+.passwordsskrin{
+    position:absolute;
+    top:64px;
+    left:152px;
+    display:flex;
+    flex-direction:column;
+    gap: 7px;
+}
+
+/*кнопки и поля*/
+.passwordsskrin img{
+    width:300px;
+    height:55px;
+    object-fit:contain;
+    display:block;
+}
+
+/*email*/
+.logintext{
+    position:absolute;
+    top:13px;
+    left:36px;
+}
+
+/*password*/
+.passwordtext{
+    position:absolute;
+    top:72px;
+    left:36px;
+}
+
+/*repeat password*/
+.repeattext{
+    position:absolute;
+    top:138px;
+    left:36px;
+}
+
+/*инпуты*/
+input{
+    width:210px;
+    border:none;
+    outline:none;
+    background:transparent;
+    box-shadow:none;
+    font-size:24px;
+    font-weight:500;
+    caret-color:transparent;
+}
+
+/*register*/
+.lg{
+    position:absolute;
+    top:258px;
+    left:246px;
+    font-size:29px;
+    font-weight:700;
+    color:#000;
+    z-index:2;
+}
+@media (max-width: 393px) {
+    body {
+        padding: 16px;
+        height: auto;
+        min-height: 100vh;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Фон карточки — масштабируем */
+    .background {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Группа полей (контейнер с иконками-подложками) */
+    .passwordsskrin {
+        position: absolute;
+        top: 16%;     /* относительное позиционирование */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+        gap: 8px;
+    }
+
+    /* Сами "кнопки-фоны" для полей */
+    .passwordsskrin img {
+        width: 100%;
+        height: auto;
+        max-width: 230px;
+        margin: 0 auto;
+    }
+
+    /* Общий стиль для всех текстовых полей */
+    .logintext,
+    .passwordtext,
+    .repeattext {
+        position: absolute;
+        left: 12%;
+        width: 76%;
+    }
+
+    .logintext {
+        top: 12px;
+        left: 54px;
+         min-width: 0;  
+    }
+    .passwordtext {
+        top: 63px;
+         min-width: 0;  
+    }
+    .repeattext {
+        top: 113px;
+        left: 53px;
+         min-width: 0;  
+    }
+
+    /* Инпуты — на всю ширину родителя */
+    input {
+        width: 100%;
+        font-size: 18px;
+        padding: 8px 0;
+        caret-color: auto; /* чтобы курсор был виден */
+    }
+
+    /* Текст кнопки Register */
+    .lg {
+        position: absolute;
+        top: 105%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    /* На всякий случай – убираем лишние отступы */
+    .passwordsskrin img:last-of-type {
+        margin-top: 35px;
+    }
+    
+}
