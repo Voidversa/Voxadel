@@ -1,0 +1,1288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: #2B2A25;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
+    width: 1920px;
+    min-height: 100px;
+    background-color: #2B2A25;
+    margin-left: 400px;
+    position: relative;
+}
+
+/* Центрирование группы с компенсацией смещения */
+.header-group {
+    position: relative;
+    width: 1920px;
+    height: 100px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+}
+
+
+/* Декорация */
+.deco-header {
+    z-index: 100;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/* Общие стили для всех оберток кнопок */
+.button-wrapper {
+    position: absolute;
+    top: 0px;
+}
+
+/* Кнопка Support */
+.button-support {
+    left: 434px;
+    z-index: 10;
+}
+
+.buttons-header {
+    display: block;
+}
+
+/* Кнопка Register */
+.button-register {
+    left: 673px;
+    top: 1px;
+    z-index: 9;
+}
+
+.buttons-header-1 {
+    display: block;
+}
+
+/* Кнопка Log in */
+.button-login {
+    left: 896px;
+    z-index: 8;
+}
+
+.buttons-header-2 {
+    display: block;
+}
+
+/* Кнопка корзины */
+.button-cart {
+    left: 991px;
+    z-index: 7;
+}
+
+.buttons-header-3 {
+    display: block;
+}
+
+/* Текст на кнопках */
+.text-header {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    z-index: 100;
+    white-space: nowrap;
+}
+
+/* Иконка корзины */
+.cart-icon {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 45px;
+    height: 45px;
+}
+
+.logo {
+    position: absolute;
+    top: 35px;
+    left: 283px;
+    z-index: 100;
+}
+
+.pfpsmall {
+    position: absolute;
+    top: 104px;
+    left: 25px;
+    z-index: 100;
+}
+
+.profile-utils {
+    position: absolute;
+    top: 110px;
+    left: 86px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: bold;
+    color: #2B2A25;
+    text-decoration: none;
+}
+
+.profile-utils a {
+    color: #2B2A25;
+    text-decoration: none;
+}
+
+.button-wrapper a {
+    text-decoration: none;
+}
+
+.logout:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 15px #ffffff;
+    transition:0.3s
+}
+
+.profile-open:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 15px #ffffff;
+    transition:0.3s
+}
+
+.button-wrapper:hover {
+    color: #FFE012;
+    text-shadow: 1px 1px 15px #FFE012;
+    transition:0.3s
+}
+
+.sidebar-group {
+    position: absolute;
+    top: 491px;
+    left:0px;
+    z-index: 100;
+}
+
+.sidebutton {
+    position: relative;
+}
+
+
+.nav {
+    position: absolute;
+    top: 61px;
+    z-index: 100;
+}
+
+.shop {
+    position: absolute;
+    top: 122px;
+    z-index: 100;
+}
+
+.footer {
+    position: absolute;
+    top: 183px;
+    z-index: 100;
+}
+
+.deco {
+    position: absolute;
+    top: 244px;
+    z-index: 100;
+}
+
+.line1 {
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    z-index: 201;
+}
+
+.line2 {
+    position: absolute;
+    top: 115px;
+    left: 0px;
+    z-index: 201;
+}
+
+.line3 {
+    position: absolute;
+    top: 176px;
+    left: 0px;
+    z-index: 201;
+}
+
+.line4 {
+    position: absolute;
+    top: 238px;
+    left: 0px;
+    z-index: 201;
+}
+
+.text-nav {
+    position: absolute;
+    top: 4px;
+    left: 40px;
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    z-index: 100;
+    white-space: nowrap;
+    text-shadow: 2px 2px 1px #00000050;
+    transition:0.3s
+}
+
+.text-nav:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #FFE012;
+    transition:0.3s
+}
+
+.sidebar-tags {
+    position: absolute;
+    top: 808px;
+    left: 11px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tagbutton-text {
+    position: absolute;
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 29px;
+    z-index: 100;
+    white-space: nowrap;
+    left: 35px;
+}
+
+.tagbutton-text:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #FFE012;
+    transition:0.3s
+}
+
+.tagbutton {
+    position: relative;
+}
+
+.tagbutton:hover .tagbutton-text {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #FFE012;
+    transition:0.3s
+}
+
+.searchfield {
+    margin-left: 220px;
+    margin-top: -20px;
+    width: 1165px;
+    height: 143px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 70px;
+    gap: 10px;
+}
+
+#search {
+    margin-right: 3px;
+}
+
+.itemfield {
+    position: absolute;
+    top: 92px;
+    left: 0px;
+    width: 1440px;
+    min-height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 80px;
+    padding: 20px;
+    padding-left: 188px;
+}
+
+.featured {
+    position: absolute;
+    top: 98px;
+    left: 275px;
+    width: 1165px;
+    height: 515px;
+    z-index: 80;
+    background-image: url('../img/Tower-of-Babel.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+footer{
+     position:relative;
+     width:1440px;
+     height:306px;
+     background:#2B2A25;
+     overflow:hidden;
+     padding:70px 90px 40px;
+    }
+
+    .top-decoration{
+     position:absolute;
+     top:0;
+     left:0;
+     width:100%;
+     pointer-events:none;
+    }
+
+    .bottom-decoration{
+     position:absolute;
+     bottom:0;
+     left:0;
+     width:100%;
+     pointer-events:none;
+    }
+
+    .footer-container{
+     position:relative;
+     z-index:2;
+     display:flex;
+     justify-content:space-between;
+    }
+
+    .footer-column h3{
+     color:#FFFFFF;
+     font-size:20px;
+     margin-bottom:6px;
+     font-weight:700;
+     font-family: "Chakra Petch", sans-serif;
+    }
+
+    .footer-column a{
+     display:block;
+     color:#A6A697;
+     text-decoration:none;
+     margin-bottom:10px;
+     font-size:11px;
+     font-weight:400;
+     transition:0.3s;
+    }
+
+    .footer-column a:hover{
+     color: #FFFFFF;
+     text-shadow: 1px 1px 5px #ffffff;
+     transition:0.3s
+    }
+
+    .-bottom{
+     position:absolute;
+     bottom:18px;
+     left:50%;
+     transform:translateX(-50%);
+     color:#FFFFFF;
+     font-size:18px;
+     font-weight:600;
+     z-index:2;
+    }
+
+    .footer-bottom{
+        position:absolute;   
+        bottom:15px;
+        left:50%;
+        transform:translateX(-50%);
+        color:#2B2A25;
+        font-size:18px;
+        font-weight:600;
+        z-index:2;
+        font-family: "Chakra Petch", sans-serif;
+    }
+
+.footer-wrapper {
+    position: absolute;
+    top: 1000px;
+}
+
+.searchtagbuttons {
+    display: flex;
+    gap: 20px;
+}
+
+.searchtagbutton a {
+    position: absolute;
+    color: #FFE012;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    transform: translate(-160px, 1px);
+}
+
+.search-button {
+    position: absolute;
+    transform: translate(-61px, -5px);
+    color: #FFE012;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 34px;
+    text-decoration: none;
+}
+
+
+.itemfield .card-wrapper {
+    position: relative;
+    width: 298px;
+    height: 369px;
+}
+
+
+.itemfield .preview {
+    display: flex;
+    align-items: center;
+    gap: 240px;
+    background-image: url('../img/Subtract.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 298px;
+    height: 369px;
+}
+
+.itemfield .preview button {
+    transform: translate(-2px, -30px);
+    width: 31px;
+    height: 46px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.itemfield .util {
+    background-image: url('../img/card-stuff.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 298px;
+    height: 113px;
+    top: 256px;
+}
+
+.itemfield h2 {
+    position: absolute;
+    top: 32px;
+    left: 20px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.itemfield .rating {
+    position: absolute;
+    top: 56px;
+    left: 18px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+}
+
+.itemfield .price {
+    position: absolute;
+    top: 26px;
+    right: 70px;
+}
+
+.itemfield .author {
+    position: absolute;
+    top: 80px;
+    left: 18px;
+}
+
+.itemfield .fs-16 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+}
+
+.itemfield .fs-20 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+}
+
+.itemfield .fc-b {
+    color: #000000;
+}
+
+.itemfield .fc-y {
+    color: #FFE012;
+}
+
+.itemfield .preview button:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #ffffff;
+    transition: 0.3s;
+}
+
+.profile button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: #2B2A25;
+    text-shadow: 1px 1px 0px #0000002f;
+    
+}
+
+.profile button:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 20px #ffffff;
+    transition:0.3s
+}
+
+.profile .name {
+    position: absolute;
+    top: 127px;
+    left: 745px;
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 67px;
+    z-index: 100;
+}
+
+.profile .pfp {
+    position: absolute;
+    top: 177px;
+    left: 1106px;
+    width: 200px;
+    height: 200px;
+}
+
+.profile .arrow-underline {
+    position: absolute;
+    top: 236px;
+    left: 731px;
+    z-index: 99;
+}
+
+.profile .author {
+    position: absolute;
+    top: 250px;
+    left: 643px;
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    z-index: 100;
+}
+
+.profile .publish {
+    position: absolute;
+    top: 515px;
+    left: 21px;
+    z-index: 100;
+}
+
+.profile .rating {
+    position: absolute;
+    top: 301px;
+    left: 643px;
+    width: 320px;
+    height: 40px;
+    font-size: 40px;
+    color: #FFE012;
+}
+
+.profile .rating-total {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #FFE012;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.profile .name-change {
+    position: absolute;
+    top: 407px;
+    left: 1177px;
+}
+
+.profile .pfp-change {
+    position: absolute;
+    top: 407px;
+    left: 937px;
+}
+
+.profile .fs-40 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 40px;
+}
+
+.profile .desc {
+    position: absolute;
+    top: 481px;
+    left: 444px;
+    font-size: 40px;
+    font-family: "Chakra Petch", sans-serif;
+    color: #ffffff;
+}
+
+.profile .publish p {
+    position: absolute;
+    top: 10px;
+    left: 33px;
+}
+
+.profile .name-change p {
+    position: absolute;
+    top: 11px;
+    left: 67px;
+}
+
+.profile .pfp-change p {
+    position: absolute;
+    top: 10px;
+    left: 33px;
+}
+
+.profile .desc-change { 
+    position: absolute;
+    top: 842px;
+    left: 444px;
+}
+
+.profile .desc-change p {
+    position: absolute;
+    top: 11px;
+    left: -25px;
+    width: 300px;
+}
+
+.separator {
+    margin-top: 936px;
+    position: relative;
+}
+
+.separator h2 {
+    position: absolute;
+    top: 0px;
+    left: 540px;
+    color: #2B2A25;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    margin-top: -11px; 
+    width: 1440px;
+    height: 640px; 
+    background-color: #FFFFFF;
+    background-image: url("../img/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.comment-separator {
+    position: absolute;
+    top: 572px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.comment-separator h2 {
+    position: absolute;
+    top: 0px;
+    margin: 0;
+    color: #2B2A25;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.commentfield {
+    position: absolute;
+    top: 590px;
+    width: 1440px;
+    min-height: 420px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    column-gap: 72px;
+    padding: 20px;
+    padding-left: 72px;
+}
+
+.commentfield .comment-button-l,
+.commentfield .comment-button-r {
+    position: absolute;
+    top: 50%;
+    transform: translateY(10%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.commentfield .comment-button-l {
+    left: 0;
+}
+
+.commentfield .comment-button-r {
+    right: 0;
+}
+
+.main button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-l {
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    transform: translateY(80%);
+    z-index: 101;
+}
+
+.button-r {
+    position: absolute;
+    top: 45%;
+    right: 480px;
+    transform: translateY(80%);
+    z-index: 101;
+}
+
+.card{
+    width:598px;
+    height:363px;
+    position:relative;
+}
+
+/*скрин картинки*/
+.card img.background{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
+
+/*пользователь 111*/
+.user{
+    position:absolute;
+    top:50px;
+    left:105px;
+    font-size:20px;
+    color:#000000;
+    font-weight:bold;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+/*ривайвс*/
+.reviews{
+    position:absolute;
+    top:75px;
+    left:95px;
+    font-size:20px;
+    color:#000000;
+    font-weight:bold;
+    font-family: "Chakra Petch", sans-serif;
+}
+.linebottom {
+        display: none;
+    }
+/*звёзды*/
+.stars{
+    position:absolute;
+    top:55px;
+    right:120px;
+    display:flex;
+    gap:6px;
+}
+
+/*картинка звёзд*/
+.stars img{
+    width:20px;
+    height:20px;
+    object-fit:contain;
+}
+
+/*цифра 5.0*/
+.rating-number{
+    position:absolute;
+    top:50px;
+    right:70px;
+    font-size:25px;
+    font-family: "Chakra Petch", sans-serif;
+    color:#FFE012;
+}
+
+/*хеадинг*/
+.heading{
+    position:absolute;
+    top:150px;
+    left:70px;
+    width:360px;
+    font-size:25px;
+    color:white;
+    font-weight:500;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+/*комент текст*/
+.comment{
+    position:absolute;
+    top:180px;
+    left:70px;
+    width:470px;
+    font-size:20px;
+    color:white;
+    font-family: "Chakra Petch", sans-serif;
+    line-height:1.5;
+}
+
+.commentfield .card-wrapper{
+    width:598px;
+    height:363px;
+    margin-top: 100px;
+}
+
+.itemfield-cart {
+    margin-top: 343px;
+}
+
+.cart-buttons {
+    margin-top: -100px;
+}
+
+.util-title {
+    position:absolute;
+    top:153px;
+    left:319px;
+    font-size:40px;
+    color:white;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+}
+
+.total {
+    position:absolute;
+    top:153px;
+    left:973px;
+    font-size:40px;
+    color:white;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+}
+
+.coupon {
+    position:absolute;
+    top:217px;
+    left:973px;
+    font-size:40px;
+    color:#FFE012;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+}
+
+.checkout-button {
+    position:absolute;
+    top:275px;
+    left:973px;
+    font-size:40px;
+    color:#2B2A25;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+}
+
+.checkout-button p{
+    position:absolute;
+    top:9px;
+    left:60px;
+    font-size:25px;
+    color:#2B2A25;
+    text-shadow: 2px 2px 0px #00000025;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    transition: 0.3s;
+}
+.checkout-button p:hover {
+    color:#ffffff;
+    transition: 0.3s;
+    text-shadow: 2px 2px 100px #ffffff;
+}
+
+.support-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    margin-top: 221px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.support-card {
+    position: relative;
+}
+
+.support-card h2 {
+    font-family: "Chakra Petch", sans-serif;
+    color: #000;
+    font-size: 35px;
+    font-weight: 500;
+    position: absolute;
+    top: 40px;
+    left: 120px;
+}
+
+.support-card a {
+    font-family: "Chakra Petch", sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    width: 433px;
+    text-align: center;
+}
+
+.support-wrapper h1 {
+    font-size: 80px;
+    font-family: "Chakra Petch", sans-serif;
+    color: #ffffff;
+    position: absolute;
+    left: 468px;
+    font-weight: 500;
+}
+
+.wikibutton {
+    font-family: "Chakra Petch", sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 35px;
+    background-image: url(../img/wiki-but.svg);
+    width: 459px;
+    height: 100px;
+    margin-top: 75px;
+    margin-left: 491px;
+}
+.wikibutton a {
+    text-decoration: none;
+    color: white;
+}
+.wikibutton:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #ffffff;
+    transition:0.3s
+}
+
+.support-card:hover a {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #ffffff;
+    transition:0.3s
+}
+@media (max-width: 393px) {
+    /* Сброс главного контейнера */
+    .main-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+        position: relative !important;
+    }
+
+    /* Хедер */
+    .header-group {
+        width: 100% !important;
+        height: auto !important;
+        left: 0 !important;
+        right: 0 !important;
+        transform: none !important;
+        margin: 0 !important;
+        padding: 1rem !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        background: #1f1e1a !important;
+        position: relative !important;
+    }
+
+    /* Скрываем декоративные картинки */
+    .deco-header,
+    .buttons-header,
+    .buttons-header-1,
+    .buttons-header-2,
+    .buttons-header-3,
+    .top-decoration,
+    .bottom-decoration {
+        display: none !important;
+    }
+
+    /* Кнопки хедера */
+    .button-wrapper {
+        position: static !important;
+        margin: 0 0.25rem !important;
+    }
+    .button-support,
+    .button-register,
+    .button-login,
+    .button-cart {
+        left: auto !important;
+        top: auto !important;
+    }
+    .nav-icons {
+        display: flex;
+    }
+    .text-header {
+        position: static !important;
+        transform: none !important;
+        font-size: 1rem !important;
+        background: #3a3a33 !important;
+        padding: 0.4rem 0.8rem !important;
+        border-radius: 30px !important;
+        display: inline-block !important;
+    }
+    .cart-icon {
+        width: 28px !important;
+        height: 28px !important;
+        margin-left: 0.25rem !important;
+                top: 86%;
+        left: 86%;
+    }
+    .logo {
+        position: static !important;
+        width: 100px !important;
+        height: auto !important;
+        margin: 0.5rem 0 !important;
+    }
+    .pfpsmall {
+        position: static !important;
+        width: 40px !important;
+        height: 40px !important;
+        margin-right: 0.5rem !important;
+    }
+    .profile-utils {
+        position: static !important;
+        flex-direction: row !important;
+        gap: 1rem !important;
+        align-items: center !important;
+        font-size: 0.9rem !important;
+        background: #2e2d27 !important;
+        padding: 0.5rem 1rem !important;
+        border-radius: 40px !important;
+        margin: 0.5rem 0 !important;
+        width: 100% !important;
+        justify-content: space-between !important;
+    }
+    .profile-utils p {
+        color: #FFFFFF !important;
+        margin: 0 !important;
+        font-size: 1rem !important;
+    }
+    .profile-utils img {
+        width: 16px !important;
+    }
+
+    /* Блок Manage tickets */
+    .support-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 1rem !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        position: relative !important;
+    }
+    .support-wrapper h1 {
+        position: static !important;
+        font-size: 2rem !important;
+        text-align: center !important;
+        margin: 1rem 0 !important;
+        left: auto !important;
+        width: auto !important;
+    }
+
+    /* Карточки тикетов */
+    .cards {
+        width: 100% !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1.5rem !important;
+    }
+    .support-card {
+        width: 90% !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+        position: relative !important;
+    }
+    .support-card img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .support-card h2 {
+        position: absolute !important;
+        font-size: 1.3rem !important;
+        top: 30px !important;
+        left: 20px !important;
+    }
+    .support-card a {
+        position: absolute !important;
+        font-size: 1rem !important;
+        top: 100px !important;
+        left: 10px !important;
+        width: calc(100% - 20px) !important;
+        text-align: center !important;
+    }
+
+    /* Стрелки навигации (скрываем их, так как они не нужны на мобилке и мешают) */
+    .button-l,
+    .button-r {
+        display: none !important;
+    }
+
+    /* Кнопка создания тикета */
+    .wikibutton {
+        width: 90% !important;
+        max-width: 300px !important;
+        height: auto !important;
+        margin: 1.5rem auto !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        font-size: 1rem !important;
+        padding: 0.8rem !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: static !important;
+    }
+    .wikibutton p {
+        font-size: 0.9rem !important;
+        margin: 0 !important;
+    }
+
+    /* Футер */
+    .footer-wrapper {
+        position: static !important;
+        margin-top: 2rem !important;
+        width: 100% !important;
+    }
+    footer {
+        width: 100% !important;
+        height: auto !important;
+        padding: 2rem 1rem !important;
+        position: relative !important;
+    }
+    .footer-container {
+        flex-direction: column !important;
+        gap: 1.8rem !important;
+    }
+    .footer-column h3 {
+        font-size: 1.2rem !important;
+        color: #FFE012 !important;
+    }
+    .footer-column a {
+        font-size: 0.8rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .footer-bottom {
+        position: static !important;
+        transform: none !important;
+        text-align: left !important;
+        margin-top: 1.5rem !important;
+        font-size: 0.7rem !important;
+        color: #FFFFFF !important;
+    }
+
+    /* Скрываем всё, что не относится к этой странице */
+    .sidebar-group,
+    .itemfield,
+    .featured,
+    .searchfield,
+    .profile,
+    .separator,
+    .main,
+    .commentfield,
+    .comment-separator,
+    .itemfield-cart,
+    .cart-buttons,
+    .util-title,
+    .total,
+    .coupon,
+    .checkout-button,
+    .textfield-navbuttons,
+    nav {
+        display: none !important;
+    }
+
+    /* Общие сбросы */
+    body {
+        font-size: 14px;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    a, button {
+        cursor: pointer;
+        touch-action: manipulation;
+    }
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    * {
+        max-width: 100vw;
+    }
+    .linebottom {
+        padding-bottom: 10px;
+        display: block;
+    }
+}
