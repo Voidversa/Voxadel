@@ -1,0 +1,1251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B2A25;
+    display: block;
+    overflow-x: auto;
+}
+
+.main-wrapper {
+    width: 1920px;
+    background-color: #2B2A25;
+    position: relative;
+}
+
+/* Центрирование группы с компенсацией смещения */
+.header-group {
+    position: absolute;
+    width: 1920px;
+    height: 100px;
+    z-index: 200;
+    left: 275px;
+    margin: 0 auto;
+    top: 0;
+}
+
+/* Декорация */
+.deco-header {
+    z-index: 100;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/* Общие стили для всех оберток кнопок */
+.button-wrapper {
+    position: absolute;
+    top: 0px;
+}
+
+/* Кнопка Support */
+.button-support {
+    left: 434px;
+    z-index: 10;
+}
+
+.buttons-header {
+    display: block;
+}
+
+/* Кнопка Register */
+.button-register {
+    left: 673px;
+    top: 1px;
+    z-index: 9;
+}
+
+.buttons-header-1 {
+    display: block;
+}
+
+/* Кнопка Log in */
+.button-login {
+    left: 896px;
+    z-index: 8;
+}
+
+.buttons-header-2 {
+    display: block;
+}
+
+/* Кнопка корзины */
+.button-cart {
+    left: 991px;
+    z-index: 7;
+}
+
+.buttons-header-3 {
+    display: block;
+}
+
+/* Текст на кнопках */
+.text-header {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    z-index: 100;
+    white-space: nowrap;
+}
+
+/* Иконка корзины */
+.cart-icon {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 45px;
+    height: 45px;
+}
+
+.logo {
+    position: absolute;
+    top: 35px;
+    left: 283px;
+    z-index: 100;
+}
+
+.pfpsmall {
+    position: absolute;
+    top: 104px;
+    left: 25px;
+    z-index: 100;
+}
+
+.profile-utils {
+    position: absolute;
+    top: 110px;
+    left: 86px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: bold;
+    color: #2B2A25;
+    text-decoration: none;
+}
+
+.profile-utils a {
+    color: #2B2A25;
+    text-decoration: none;
+}
+
+.button-wrapper a {
+    text-decoration: none;
+}
+
+.logout:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 15px #ffffff;
+    transition:0.3s
+}
+
+.profile-open:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 15px #ffffff;
+    transition:0.3s
+}
+
+.button-wrapper:hover {
+    color: #FFE012;
+    text-shadow: 1px 1px 15px #FFE012;
+    transition:0.3s
+}
+
+.sidebar-group {
+    position: absolute;
+    top: 491px;
+    left:0px;
+    z-index: 100;
+}
+
+.sidebutton {
+    position: relative;
+}
+
+.main {
+    position: absolute;
+    top: 0px;
+    z-index: 100;   
+    
+}
+
+.nav {
+    position: absolute;
+    top: 61px;
+    z-index: 100;
+}
+
+.shop {
+    position: absolute;
+    top: 122px;
+    z-index: 100;
+}
+
+.footer {
+    position: absolute;
+    top: 183px;
+    z-index: 100;
+}
+
+.deco {
+    position: absolute;
+    top: 244px;
+    z-index: 100;
+}
+
+.line1 {
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    z-index: 201;
+}
+
+.line2 {
+    position: absolute;
+    top: 115px;
+    left: 0px;
+    z-index: 201;
+}
+
+.line3 {
+    position: absolute;
+    top: 176px;
+    left: 0px;
+    z-index: 201;
+}
+
+.line4 {
+    position: absolute;
+    top: 238px;
+    left: 0px;
+    z-index: 201;
+}
+
+.text-nav {
+    position: absolute;
+    top: 4px;
+    left: 40px;
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    z-index: 100;
+    white-space: nowrap;
+    text-shadow: 2px 2px 1px #00000050;
+    transition:0.3s
+}
+
+.text-nav:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #FFE012;
+    transition:0.3s
+}
+
+.sidebar-tags {
+    position: absolute;
+    top: 808px;
+    left: 11px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tagbutton-text {
+    position: absolute;
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 29px;
+    z-index: 100;
+    white-space: nowrap;
+    left: 35px;
+}
+
+.tagbutton-text:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #FFE012;
+    transition:0.3s
+}
+
+.tagbutton {
+    position: relative;
+}
+
+.tagbutton:hover .tagbutton-text {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #FFE012;
+    transition:0.3s
+}
+
+.searchfield {
+    position: absolute;
+    top: 2300px;
+    left: 275px;
+    width: 1440px;
+    height: 53px;
+    background-image: url('../img/top.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 70px;
+    gap: 10px;
+    z-index: 10;
+}
+
+#search {
+    margin-right: 3px;
+}
+
+.itemfield {
+    position: absolute; 
+    top: 900px; 
+    left: 275px; 
+    width: 1440px; 
+    height: 2318px; 
+    min-height: 1748px; 
+    background-color: #fff; 
+    background-image: url('../img/bg.svg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-content: flex-start; 
+    column-gap: 50px; 
+}
+
+.featured {
+    position: absolute;
+    top: 98px;
+    left: 275px;
+    width: 1440px;
+    height: 810px;
+    z-index: 80;
+    background-image: url('../img/item.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    position: absolute;
+    top: 17px;
+    left: 35%;
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 62px;
+    z-index: 100;
+    text-shadow:4px 4px 0px #474747;
+}
+
+
+footer{
+     position:relative;
+     width:1440px;
+     height:306px;
+     background:#2B2A25;
+     overflow:hidden;
+     padding:70px 90px 40px;
+    }
+
+    .top-decoration{
+     position:absolute;
+     top:0;
+     left:0;
+     width:100%;
+     pointer-events:none;
+    }
+
+    .bottom-decoration{
+     position:absolute;
+     bottom:0;
+     left:0;
+     width:100%;
+     pointer-events:none;
+    }
+
+    .topitem{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        pointer-events:none;
+       }
+    .footer-container{
+     position:relative;
+     z-index:2;
+     display:flex;
+     justify-content:space-between;
+    }
+
+    .footer-column h3{
+     color:#FFFFFF;
+     font-size:20px;
+     margin-bottom:6px;
+     font-weight:700;
+     font-family: "Chakra Petch", sans-serif;
+    }
+
+    .footer-column a{
+     display:block;
+     color:#A6A697;
+     text-decoration:none;
+     margin-bottom:10px;
+     font-size:11px;
+     font-weight:400;
+     transition:0.3s;
+    }
+
+    .footer-column a:hover{
+     color: #FFFFFF;
+     text-shadow: 1px 1px 5px #ffffff;
+     transition:0.3s
+    }
+
+    .footer-bottom{
+     position:absolute;
+     bottom:18px;
+     left:50%;
+     transform:translateX(-50%);
+     color:#FFFFFF;
+     font-size:18px;
+     font-weight:600;
+     z-index:2;
+    }
+
+    .footer-bottom{
+        position:absolute;   
+        bottom:15px;
+        left:50%;
+        top: 5px;
+        transform:translateX(-50%);
+        color:#2B2A25;
+        font-size:35px;
+        font-weight:600;
+        z-index:2;
+        font-family: "Chakra Petch", sans-serif;
+    }
+
+    .footer-bottom1{
+        position:absolute;   
+        bottom:15px;
+        left:50%;
+        top: 265px;
+        transform:translateX(-50%);
+        color:#2B2A25;
+        font-size:25px;
+        font-weight:600;
+        z-index:2;
+        font-family: "Chakra Petch", sans-serif;
+    }
+
+.footer-wrapper {
+    position: absolute;
+    top: 2200px;
+}
+
+.searchtagbuttons {
+    display: flex;
+    gap: 20px;
+}
+
+.searchtagbutton a {
+    position: absolute;
+    color: #FFE012;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    transform: translate(-160px, 1px);
+}
+
+.search-button {
+    position: absolute;
+    transform: translate(-61px, -5px);
+    color: #FFE012;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 34px;
+    text-decoration: none;
+}
+
+
+.card-wrapper {
+    position: relative;
+    width: 377px;
+    height: 466px;
+    top: 1600px;
+    left: 100px;
+}
+
+
+.preview {
+    display: flex;
+    align-items: center;
+    gap: 319px;
+    background-image: url('../img/img/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 377px;
+    height: 466px;
+}
+
+.preview button {
+    transform: translate(-2px, -30px);
+    width: 31px;
+    height: 46px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.util {
+    background-image: url('../img/card-stuff.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 377px;
+    height: 143px;
+    top:323px;
+}
+
+h2 {
+    position: absolute;
+    top: 40px;
+    left: 26px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.rating {
+    position: absolute;
+    top: 77px;
+    left: 18px;
+    height: 22px;
+}
+
+.price {
+    position: absolute;
+    top: 34px;
+    right: 93px;
+}
+
+.author {
+    position: absolute;
+    top: 100px;
+    left: 18px;
+}
+
+.fs-16 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+}
+
+.fs-20 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+}
+
+.fc-b {
+    color: #000000;
+}
+
+.fc-y {
+    color: #FFE012;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+}
+
+/*планшет*/
+/*размер скрина*/
+.card{
+    width:878px;
+    height:1333px;
+    position:absolute;
+    top:430px;
+    left:335px;
+    transform:scale(1.5);
+    transform-origin:top left;
+}
+
+/*скрин картинки*/
+.card img.background{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
+
+/*пользователь*/
+.Voidversa{
+    position:absolute;
+    top:467px;
+    left:620px;
+    font-size:20px;
+    color:#ffffff;
+    font-weight:bold;
+}
+
+/*Сhange price*/
+.Changeprice{
+    position:absolute;
+    top:835px;
+    left:260px;
+    font-size:20px;
+    color:#000000;
+    font-weight:bold;
+    z-index: 1
+}
+
+/*Add Authors*/
+.AddAuthors{
+    position:absolute;
+    top:835px;
+    left:500px;
+    font-size:20px;
+    color:#000000;
+    font-weight:bold;
+    z-index: 1
+}
+
+/*Upload files*/
+.Uploadfiles{
+    position:absolute;
+    top:835px;
+    left:680px;
+    font-size:20px;
+    color:#000000;
+    font-weight:bold;
+    z-index: 1
+}
+
+
+/*Описание*/
+.Description{
+    position:absolute;
+    top:490px;
+    left:135px;
+    font-size:25px;
+    color:#ffffff;
+    font-weight:bold;
+}
+
+/*описание ресурса*/
+.TextblockText{
+    position:absolute;
+    top:520px;
+    left:135px;
+    font-size:20px;
+    color:#ffffff;
+}
+
+/*звёзды*/
+.stars1000{
+    position:absolute;
+    top:501px;
+    right:185px;
+    display:flex;
+    gap:2px;
+}
+
+/*картинка звёзд*/
+.stars1000 img{
+    width:13px;
+    height:13px;
+    object-fit:contain;
+}
+
+/*звёзды1*/
+.stars1{
+    position:absolute;
+    top:410px;
+    right:250px;
+    display:flex;
+    gap:2px;
+}
+
+/*картинка звёзд1*/
+.stars1 img{
+    width:20px;
+    height:20px;
+    object-fit:contain;
+}
+
+/*цифра 5.0 высокая*/
+.rating-number1{
+    position:absolute;
+    top:408px;
+    right:215px;
+    font-size:20px;
+    color:#FFE012;
+}
+
+/*цифра 5.0*/
+.rating-number1000{
+    position:absolute;
+    top:501px;
+    right:161px;
+    font-size:12px;
+    color:#FFE012;
+}
+
+/*HITOFFS*/
+.HITOFFS{
+    position:absolute;
+    top:405px;
+    left:400px;
+    font-size:25px;
+    color:white;
+    font-weight:500;
+}
+
+/*50 user reviews*/
+.reviews1000{
+    position:absolute;
+    top:515px;
+    left:640px;
+    width:470px;
+    font-size:10px;
+    color:white;
+    line-height:1.5;
+}
+
+/*кнопки*/
+.Change{
+    position:absolute;
+    top:820px;
+    right:385px;
+    display:flex;
+}
+
+/*картинка кнопки*/
+.Change img{
+    width:280px;
+    height:55px;
+    object-fit:contain;
+}
+
+/*кнопки*/
+.Add{
+    position:absolute;
+    top:820px;
+    right:194px;
+    display:flex;
+}
+
+/*картинка кнопки*/
+.Add img{
+    width:280px;
+    height:55px;
+    object-fit:contain;
+}
+
+/*кнопки*/
+.Upload{
+    position:absolute;
+    top:820px;
+    right:0px;
+    display:flex;
+}
+
+/*картинка кнопки*/
+.Upload img{
+    width:280px;
+    height:55px;
+    object-fit:contain;
+}
+
+/*коммент*/
+.cardssssssss2{
+    display:flex;
+    gap:100px;
+}
+
+/*карточка*/
+.card2{
+    width:598px;
+    height:363px;
+    position:relative;
+    z-index: 100;
+    top: 1750px;
+    left: 350px;
+}
+
+/*картинка*/
+.card2 img.background{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
+
+/*пользователь*/
+.user{
+    position:absolute;
+    top:50px;
+    left:105px;
+    font-size:20px;
+    color:#000000;
+    font-weight:bold;
+}
+
+/*reviews*/
+.reviews{
+    position:absolute;
+    top:75px;
+    left:95px;
+    font-size:20px;
+    color:#000000;
+    font-weight:bold;
+}
+
+/*звёзды*/
+.stars{
+    position:absolute;
+    top:55px;
+    right:120px;
+    display:flex;
+    gap:6px;
+}
+
+/*картинки звёзд*/
+.stars img{
+    width:20px;
+    height:20px;
+    object-fit:contain;
+}
+
+/*рейтинг*/
+.rating-number{
+    position:absolute;
+    top:50px;
+    right:70px;
+    font-size:25px;
+    color:#FFE012;
+}
+
+/*heading*/
+.heading{
+    position:absolute;
+    top:110px;
+    left:400px;
+    font-size:25px;
+    color:white;
+    font-weight:500;
+}
+
+/*сomment*/
+.comment{
+    position:absolute;
+    top:170px;
+    left:70px;
+    width:470px;
+    font-size:20px;
+    color:white;
+    line-height:1.5;
+}
+
+/* стрелки на скрине итема */
+.images{
+    top: 600px;
+    display:flex;
+    gap:1353px;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    z-index: 100;
+    left: 275px;
+}
+
+/* стрелки по центру */
+.images1{
+    top: 1995px;
+    display:flex;
+    gap:1353px;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    z-index: 100;
+    left: 275px;
+}
+
+/* последние стрелки */
+.images2{
+    top: 2660px;
+    display:flex;
+    gap:1353px;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    z-index: 100;
+    left: 275px;
+}
+@media (max-width: 393px) {
+    /* Сброс всех смещений и фиксированных ширин */
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        overflow-x: hidden !important;
+    }
+
+    .main-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+        position: relative !important;
+    }
+
+    /* Хедер */
+    .header-group {
+        width: 100% !important;
+        height: auto !important;
+        left: 0 !important;
+        right: 0 !important;
+        transform: none !important;
+        margin: 0 !important;
+        padding: 1rem !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        background: #1f1e1a !important;
+        position: relative !important;
+    }
+
+    .deco-header,
+    .buttons-header,
+    .buttons-header-1,
+    .buttons-header-2,
+    .buttons-header-3,
+    .top-decoration,
+    .bottom-decoration,
+    .topitem {
+        display: none !important;
+    }
+
+    .button-wrapper {
+        position: static !important;
+        margin: 0 0.25rem !important;
+    }
+    .button-support,
+    .button-register,
+    .button-login,
+    .button-cart {
+        left: auto !important;
+        top: auto !important;
+    }
+    .text-header {
+        position: static !important;
+        transform: none !important;
+        font-size: 1rem !important;
+        background: #3a3a33 !important;
+        padding: 0.4rem 0.8rem !important;
+        border-radius: 30px !important;
+        display: inline-block !important;
+    }
+    .cart-icon {
+        width: 28px !important;
+        height: 28px !important;
+        top: 200px;
+        margin-left: 0.25rem !important;
+    }
+    .logo {
+        position: static !important;
+        width: 100px !important;
+        height: auto !important;
+        margin: 0.5rem 0 !important;
+    }
+    .pfpsmall {
+        position: static !important;
+        width: 40px !important;
+        height: 40px !important;
+        margin-right: 0.5rem !important;
+    }
+    .profile-utils {
+        position: static !important;
+        flex-direction: row !important;
+        gap: 1rem !important;
+        align-items: center !important;
+        font-size: 0.9rem !important;
+        background: #2e2d27 !important;
+        padding: 0.5rem 1rem !important;
+        border-radius: 40px !important;
+        margin: 0.5rem 0 !important;
+        width: 100% !important;
+        justify-content: space-between !important;
+    }
+    .profile-utils p {
+        color: #FFFFFF !important;
+        margin: 0 !important;
+        font-size: 1rem !important;
+    }
+    .profile-utils img {
+        width: 16px !important;
+    }
+
+    /* Баннер (featured) – круглый и центрированный */
+    .featured {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 90% !important;
+        max-width: 300px !important;
+        margin: 1rem auto !important;
+        aspect-ratio: 1 / 1 !important;
+        background-size: cover !important;
+        background-position: center !important;
+        overflow: hidden !important;
+    }
+
+    /* Скрываем блок "You might also like" и все связанные с ним элементы */
+    .searchfield,
+    .separator,
+    .comment-separator {
+        display: none !important;
+    }
+
+    /* Скрываем все стрелки навигации */
+    .button-l, .button-r,
+    .comment-button-l, .comment-button-r,
+    .images, .images1, .images2 {
+        display: none !important;
+    }
+
+    /* Основные карточки товаров (itemfield) */
+    .itemfield {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 100% !important;
+        min-height: auto !important;
+        background-color: #fff !important;
+        background-image: url('../img/bg.svg') !important;
+        background-size: cover !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 2rem !important;
+        padding: 1rem !important;
+        margin: 0 !important;
+    }
+
+    .card-wrapper {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 90% !important;
+        max-width: 300px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+
+    .preview {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 377 / 466 !important;
+        background-size: cover !important;
+        gap: 0 !important;
+        justify-content: space-between !important;
+        padding: 0 10px !important;
+    }
+
+    /* Текст на фоне card-stuff.svg */
+    .util {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        background-image: url('../img/card-stuff.svg') !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        width: 100% !important;
+        min-height: 113px !important;
+        padding: 0.8rem 1rem !important;
+        position: static !important;
+        margin-top: -20px !important;
+    }
+
+    .card-wrapper h2,
+    .card-wrapper .rating,
+    .card-wrapper .author,
+    .card-wrapper .price {
+        margin: 22.3rem 0 !important;
+        text-align: left !important;
+    }
+    .card-wrapper .price {
+        left: 213px;
+        top: 28px;
+    }
+
+    .card-wrapper .rating {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 0.2rem !important;
+    }
+
+    .card-wrapper h2 {
+        color: #000000 !important;
+        font-size: 1rem !important;
+    }
+    .card-wrapper .author,
+    .card-wrapper .price {
+        color: #FFE012 !important;
+        font-size: 0.9rem !important;
+    }
+    .card-wrapper .rating-total {
+        font-size: 0.9rem !important;
+    }
+
+    /* Детальная карточка товара (большой .card) */
+    .card {
+        display: none;
+    }
+    .card img.background {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+    }
+    .Voidversa, .Changeprice, .AddAuthors, .Uploadfiles,
+    .Description, .TextblockText, .stars1000, .stars1,
+    .rating-number1, .rating-number1000, .HITOFFS, .reviews1000,
+    .Change, .Add, .Upload {
+        position: static !important;
+        text-align: center !important;
+        margin: 0.5rem auto !important;
+    }
+    .Change img, .Add img, .Upload img {
+        width: 100% !important;
+        max-width: 200px !important;
+        height: auto !important;
+    }
+
+    /* Карточки отзывов */
+    .cardssssssss2 {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 2rem !important;
+        margin: 1rem auto !important;
+        width: 100% !important;
+    }
+    .card2 {
+        width: 90% !important;
+        max-width: 340px !important;
+        height: auto !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        background: #1a1a1a !important;
+        border-radius: 20px !important;
+        padding: 1rem !important;
+        margin: 0 auto !important;
+    }
+    .card2 img.background {
+        display: none !important;
+    }
+    .user, .reviews, .stars, .rating-number, .heading, .comment {
+        position: static !important;
+        text-align: left !important;
+        margin: 0.5rem 0 !important;
+        color: #FFFFFF !important;
+    }
+    .stars {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 0.3rem !important;
+    }
+    .rating-number {
+        font-size: 1.3rem !important;
+        color: #FFE012 !important;
+        text-align: center !important;
+    }
+    .heading {
+        font-size: 1.2rem !important;
+        font-weight: bold !important;
+    }
+    .comment {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Футер */
+    .footer-wrapper {
+        position: static !important;
+        margin-top: 2rem !important;
+        width: 100% !important;
+    }
+    footer {
+        width: 100% !important;
+        height: auto !important;
+        padding: 2rem 1rem !important;
+        position: relative !important;
+    }
+    .footer-container {
+        flex-direction: column !important;
+        gap: 1.8rem !important;
+    }
+    .footer-column h3 {
+        font-size: 1.2rem !important;
+        color: #FFE012 !important;
+    }
+    .footer-column a {
+        font-size: 0.8rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .footer-bottom1 {
+        position: static !important;
+        transform: none !important;
+        text-align: left !important;
+        margin-top: 1.5rem !important;
+        font-size: 0.7rem !important;
+        color: #FFFFFF !important;
+        background: none !important;
+    }
+ .nav-icons {
+    display: flex;
+ }
+    /* Скрываем ненужные элементы */
+    .sidebar-group,
+    .sidebar-tags,
+    .searchtagbuttons,
+    .search-button,
+    .settingarrows {
+        display: none !important;
+    }
+
+    /* Общие сбросы */
+    .preview img {
+        display: none;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    * {
+        max-width: 100vw;
+    }
+}
